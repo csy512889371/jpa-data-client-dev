@@ -1,0 +1,29 @@
+server:
+  #端口号
+  port: 8088
+
+magina:
+  query:
+    jpa:
+      javax:
+        sharedCache:
+          mode: ALL
+        persistence:
+          validation:
+            mode: none
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        hbm2ddl:
+          auto: none
+        showSql: true
+        formatSql: true
+    sql:
+      minimumIdle: 10
+      connectionTestQuery: SELECT 1
+      jdbc:
+        password: csy123456
+        multipleDataSource: true
+        driverClass: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/testblog?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+        username: root
+      maximumPoolSize: 20

@@ -1,0 +1,2 @@
+--findAllBlogTopic
+SELECT * FROM EVA_BLOG_TOPIC

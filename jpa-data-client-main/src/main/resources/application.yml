@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    # 开发环境 dev ; 生产环境 prod ; 测试环境 test
+    active: dev
+
+logging:
+  config: classpath:logback-jycj.xml
+
+
